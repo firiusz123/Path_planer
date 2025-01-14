@@ -28,7 +28,7 @@ for point in selected_points:
 x_points, y_points = zip(*selected_points)
 
 # Fit a smoothing spline with a specified smoothing factor
-smoothing_factor = 0.6  # Adjust this to control the smoothness
+smoothing_factor = 0.1  # Adjust this to control the smoothness
 spline = smoothing_spline(np.array(x_points), np.array(y_points), smoothing_factor)
 
 # Generate x-values for plotting the fitted spline curve

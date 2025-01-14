@@ -20,7 +20,7 @@ for point in selected_points:
     plt.scatter(point[0], point[1], color='red', label='Selected Point')
 
 x_points, y_points = zip(*selected_points)
-poly = np.polyfit(x_points,y_points,len(selected_points)-1)
+poly = np.polyfit(x_points,y_points,4)
 
 print(poly)
 plot_poly = np.poly1d(poly)
